@@ -21,3 +21,14 @@ progress_bar.empty()
 # this button is not connected to any other logic, it just causes a plain
 # rerun.
 st.button("Re-run")
+
+hide_st_style="""
+
+<style>
+#MainMenu {visibility:hidden;}
+footer {visibility:hidden;}
+header {visibility:hidden;}
+</style>
+
+"""
+st.markdown(hide_st_style,unsafe_allow_html=True)
